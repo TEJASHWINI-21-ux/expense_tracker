@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><strong>My expense tracker</strong></title>
+    
+    <style>
+      body{
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+      
+      }
+      h1{
+        text-align: center;
+      }
+      .parent{
+          display:flex;
+          justify-content:center;
+          gap:80px;
+                   
+        }
+      .child{
+           padding:20px;
+           background-color: aquamarine;
+           border-radius: 20px;
+           border-color:blueviolet;
+           text-align: center;
+           justify-content: space-between;
+           width:900px;
+      }
+      .categories{
+            display:flex;
+            flex-direction: column;
+          
+            justify-content: center;
+            padding:12px 
+           
+       }
+      .categories category-item{
+        display:flex;
+        justify-content: center;
+      }
+      .transaction{
+         display:grid;
+          justify-content:center;
+          gap:1px;
+                   
+      }
+      .transaction-card{
+           
+           background-color: red;
+           border-radius: 5px;
+           border-color:green;
+           text-align: center;
+           justify-content: space-between;
+           
+      }
+       
+
+        
+    </style>
+</head>
+<body>
+  <h1>My expense tracker</h1>
+     <p>Track your monthly spending</p>
+    <div class="parent">
+      <div class="child"> 
+        <h2>Total spent </h2>
+        <p>$9000</p>
+      </div>  
+      <div class="child"> 
+        <h2>Highest category </h2>
+        <p>food</p>
+      </div>       
+      <div class="child">
+        <h2>Current month</h2>
+      <p>6000</p>
+    </div>
+    </div>
+    <div class="categories">
+      <h2>Expensive category</h2>
+      <div class="category-item">
+        <p>food  4000</p>
+        <p>transport 2000</p>
+        <p>shopping 1000</p>
+        <p>entertainment    1000</p>
+      </div>
+    </div>  
+    <div class="transaction">
+            <h2>recent transactions</h2>
+            <div class="transaction-card">
+            <div class="transaction-title">grocery shopping</div>
+            <div clas="transaction-date">2 feb 2026</div>
+             <div clas="transaction-amount">100</div>
+
+        </div>
+        <div class="transaction-card">
+            <div class="transaction">loan</div>
+            <div clas="transaction-date">2 feb 2026</div>
+             <div clas="transaction-amount">100</div>
+
+        </div>
+        <div class="transaction-card">
+            <div class="transaction">movie ticket</div>
+            <div clas="transaction-date">2 feb 2026</div>
+             <div clas="transaction-amount">100</div>
+
+        </div>
+
+    
+    </div>
+
+</body>
+</html>
